@@ -1,0 +1,34 @@
+@echo off
+REM Commands to set up and run the Face Recognition Project on a new Windows system
+
+REM Step 1: Install Python 3.10 if not already installed
+echo Make sure Python 3.10 is installed on your system
+echo You can download it from https://www.python.org/downloads/release/python-3100/
+echo.
+
+REM Step 2: Create and activate a virtual environment
+echo Creating a virtual environment...
+python -m venv venv
+call venv\Scripts\activate
+
+REM Step 3: Install required packages
+echo Installing required packages...
+pip install -r requirements.txt
+
+REM Step 4: Run the application
+echo.
+echo To run the application:
+echo python main.py
+echo.
+echo No additional command-line arguments are needed!
+
+
+
+
+
+
+& "C:\Users\user\OneDrive\Desktop\IOMP Project\py10-env\Scripts\python.exe" -m venv venv
+.\venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+python main.py
